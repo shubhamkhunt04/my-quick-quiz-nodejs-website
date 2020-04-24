@@ -1,0 +1,346 @@
+<!-- 
+created by Shubham Khunt
+
+============contact============
+
+Email   :-   shubhamkhunt08@gmail.com
+github  :-   https://github.com/shubhamkhunt04
+linkdin :-   https://www.linkedin.com/in/shubhamkhunt
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+
+  <link rel="stylesheet" href="./stylesheets/contactus.css">
+  <link rel="stylesheet" href="./stylesheets/about.css">
+  <!-- bootstrap cdn -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- font cnd -->
+  <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap" rel="stylesheet">
+  <!-- main style -->
+  <link rel="stylesheet" href="./stylesheets/style.css">
+  <link rel="stylesheet" href="./stylesheets/zoom.css">
+  <!-- icon cdn -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+  <!-- navbar start -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand font-weight-bold text-warning" href="#">Quick Quiz</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link active zoom" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        </li>
+      </ul>
+
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link zoom" href="#aboutid">About<span class="sr-only">(current)</span></a>
+        </li>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link zoom" href="#contactusid">Contact<span class="sr-only">(current)</span></a>
+        </li>
+        </li>
+      </ul>
+      <button type="button" class="btn btn-outline-warning mx-2" data-toggle="modal" data-target="#signup">
+        Sign Up
+      </button>
+      <button type="button" class="btn btn-outline-primary mx-2" data-toggle="modal" data-target="#login">
+        Login
+      </button>
+    </div>
+  </nav>
+
+  <!-- navbar end  -->
+
+  <!-- carousel start -->
+
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="3000">
+
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/landing1.jpg" class="d-block img-fluid" alt="quiz1.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/landing2.jpg" class="d-block img-fluid" alt="quiz2.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/landing3.jpg" class="d-block img-fluid" alt="quiz3.jpg">
+      </div>
+    </div>
+  </div>
+
+  <!-- carousel end -->
+
+  <!-- signup landing page start -->
+  <!-- Modal -->
+  <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <form method="POST">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Username</label>
+              <input type="text" class="form-control" id="susername" placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">College Name</label>
+              <input type="text" class="form-control" id="scollege" placeholder="Enter your college">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email Address</label>
+              <input type="email" class="form-control" id="semail" placeholder="Enter your email address">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Mobile Number</label>
+              <input type="number" class="form-control" id="smobile" placeholder="9876543210">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="spassword" placeholder="Enter your password">
+            </div>
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="ssignup">Sign Up</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- signup landing page end -->
+
+
+  <!-- login landing page start -->
+  <!-- Modal -->
+
+  <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Username</label>
+              <input type="text" class="form-control" id="lusername" placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="lpassword" placeholder="Enter your password">
+            </div>
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="llogin">Login</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- login landing page end -->
+
+  <div class="container my-3 backcolor">
+    <h1 class="text-center">Using Quick Quiz for Distance Learning</h1>
+  </div>
+
+  <div class="container backcolor">
+    <div class="row">
+
+      <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+        <img src="./images/person_holding_phone.png" alt="img" width="150" height="150" class="zoom">
+        <h4>Students ALWAYS see questions on their own screen.</h4>
+        <p class="font-weight-light">No stressing about whether everyone joined your video conference.</p>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+        <img src="./images/people_at_home.png" alt="img" width="150" height="150" class="zoom">
+        <h4>Bring people together (apart) with live quizzes and polls.</h4>
+        <p class="font-weight-light">Build community and keep everyone engaged even if you’re not in the same place!</p>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+        <img src="./images/people_around_globe.png" alt="img" width="150" height="150" class="zoom">
+        <h4>Assign quizzes and engage families on their own time.</h4>
+        <p class="font-weight-light">Create student-paced assignments, share flashcards, and get families involved too.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- about start -->
+
+  <div class="jumbotron jumbotron-fluid backcolor mt-3" id="aboutid">
+    <div class="container text-center bg-dark">
+      <h1 class="mb-3">About Us</h1>
+      <p class="lead">Our mission is what drives us to do everything possible to expand human potential. We do that by
+        improving student capability and skills, by making our products more sustainably, by building a creative and
+        diverse global team and by making a positive impact in communities where we live and work.</p>
+    </div>
+  </div>
+
+
+  <h1 class="text-center my-1 backcolor">Our Team</h1>
+
+
+  <div class="container backcolor">
+    <div class="row justify-content-center">
+      <div class="col-md-4 w-auto my-3">
+        <div class="card shadow cardcolor" style="width: 20rem;">
+          <div class="inner">
+            <img class="card-img-top" src="./images/shubhamkhunt.jpg" height="215" alt="Card image cap">
+          </div>
+          <div class="card-body text-center">
+            <h4 class="card-title">Shubham Khunt</h4>
+            <p class="card-title">CEO & Founder</p>
+            <button id="conbtn1" type="button" class="btn btn-dark" btn-lg btn-block">Contact</button>
+            <div id="showmynum1"></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 w-auto my-3">
+        <div class="card shadow cardcolor" style="width: 20rem;">
+          <div class="inner">
+            <img class="card-img-top" src="./images/mikeross.jpg" height="215" alt="Card image cap">
+          </div>
+          <div class="card-body text-center">
+            <h4 class="card-title">Mike Ross</h4>
+            <p class="card-title">Art Director</p>
+            <button id="conbtn2" type="button" class="btn btn-dark" btn-lg btn-block">Contact</button>
+            <div id="showmynum2"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 w-auto my-3">
+        <div class="card shadow cardcolor" style="width: 20rem;">
+          <div class="inner">
+            <img class="card-img-top" src="./images/johncrippo.jpg" height="215" alt="Card image cap">
+          </div>
+          <div class="card-body text-center">
+            <h4 class="card-title">John Crippo</h4>
+            <p class="card-title">Designer</p>
+            <button id="conbtn3" type="button" class="btn btn-dark" btn-lg btn-block">Contact</button>
+            <div id="showmynum3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- about end -->
+
+
+
+    <hr class="pt-5">
+
+
+    <!-- contact form start -->
+
+    <div class="container backcolor" id="contactusid">
+      <div style="text-align:center">
+        <h1>Contact Us</h1>
+        <p>Swing by for a cup of coffee, or leave us a message:</p>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="./images/3.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <form method="POST">
+            <label for="fname">Name</label>
+            <input type="text" id="name" name="fullname" placeholder="Your name..">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email address..">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="india">India</option>
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            <button type="button" class="btn feedbackbutton" id="consub">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact form end -->
+
+  <!-- footer start -->
+
+  <footer class="mt-1">
+    <div class="text-center">
+      <p>© Copyright 2020 By Shubham Khunt. <span><a href="./privacypolicy.html"
+            style="text-decoration: underline;color: black;">Privacy Policy</a></span></p>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+
+    <script src="./javascripts/usersignup.js"></script>
+    <script src="./javascripts/userlogin.js"></script>
+    <script src="./javascripts/mycontact.js"></script>
+    <script src="./javascripts/contactus.js"></script>
+</body>
+
+</html>
